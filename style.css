@@ -1,94 +1,70 @@
-/* Reset dei margini e dei padding predefiniti */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li,
-table {
+*, html {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
-*, html {
-    scroll-behavior: smooth;
-}
-
-/* Stile del corpo della pagina */
 body {
+  background-image: url("https://img.freepik.com/free-photo/dark-shiny-background_1017-8079.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1,h2,a {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  color: white;
 }
 
-a {
-    box-shadow: 22px 22px 20px #f5f5f5;
-}
+a {box-shadow: 22px 22px 20px #f5f5f5;}
 
-/* Stile dell'intestazione */
-header {
-  background-color: grey;
-  padding: 20px;
-  color: black;
-  text-align: center;
-  box-shadow: 30px 30px 30px #888888;
-}
-
-/* Stile della barra di navigazione */
-nav {
-  background-color: #333;
-}
-
-nav ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 40;
+  width: 100%;
 }
 
-nav ul li {
+li {
   float: left;
 }
 
-nav ul li a {
+li a {
   display: block;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  background-color: #555;
+li a:hover:not(.active) {
+  background-color: #111;
 }
 
-/* Stile delle sezioni di contenuto */
-section {
-  padding: 20px;
-}
+section {padding: 20px;}
 
-section h2 {
-  margin-bottom: 10px;
-}
+section h2 {margin-bottom: 10px;}
 
-
-h2{
-    color: white;
-    
-}
-
-
-
-/* Stile della parte finale della pagina (footer) */
-#footer {
-  position: absolute;
-  bottom: 0;
+footer {
+  position: fixed;
   width: 100%;
+  bottom: 0;
   background-color: #333;
   padding: 40px;
   color: #fff;
   text-align: center;
 }
 
-
+header {
+  bottom: 0;
+  background-color: grey;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  box-shadow: 30px 30px 30px #888888;
+}
